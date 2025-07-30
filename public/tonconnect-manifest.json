@@ -1,0 +1,11 @@
+{
+  "name": "FAE Arcade",
+  "description": "Fae Arcade is a platform for playing games and earning rewards.",
+  "url": "https://taiakindaniil.github.io/fae-arcade-mini-app",
+  "iconUrl": "https://taiakindaniil.github.io/fae-arcade-mini-app/icon.png",
+  "short_name": "Fae Arcade",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
