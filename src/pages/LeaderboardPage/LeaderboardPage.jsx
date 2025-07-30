@@ -14,7 +14,7 @@ export const LeaderboardPage = () => {
 
   return (
     <Page back={false}>
-        Leaderboard Page
+        Leaderboard Page 
     </Page>
   );
 };
