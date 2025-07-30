@@ -24,7 +24,7 @@ export const IndexPage = () => {
 
         <IconButton 
           src="/assets/buttons/play-button.svg"
-          onClick={() => navigate('/withdraw')}
+          onClick={() => navigate('/hub')}
           width="100px"
           style={{marginBottom: '10px'}}
         />
