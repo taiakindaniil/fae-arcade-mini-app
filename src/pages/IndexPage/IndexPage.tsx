@@ -1,4 +1,4 @@
-// import { useEffect, useState } from 'react';
+import { type FC, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Page } from '@/components/Page';
 import { IconButton } from '@/components/IconButton/IconButton';
@@ -6,7 +6,7 @@ import { IconButton } from '@/components/IconButton/IconButton';
 
 import './IndexPage.css';
 
-export const IndexPage = () => {
+export const IndexPage: FC = () => {
 
 //   const api = useApi(); // This sets up the init data automatically
 

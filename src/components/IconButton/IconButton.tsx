@@ -1,6 +1,18 @@
-import React from 'react';
+import type { FC } from 'react';
 
-export const IconButton = ({ 
+export interface IconButtonProps {
+  src: string;
+  alt: string; 
+  onClick?: () => {};
+  className?: string; 
+  style: {},
+  disabled: boolean,
+  width: string,
+  height: string,
+  hoverEffect: boolean
+};
+
+export const IconButton: FC<IconButtonProps> = ({ 
   src, 
   alt = "Button", 
   onClick, 
@@ -20,7 +32,7 @@ export const IconButton = ({
     ...style
   };
 
-  const handleClick = (e) => {
+  const handleClick = (e: any) => {
     if (!disabled && onClick) {
       onClick(e);
     }

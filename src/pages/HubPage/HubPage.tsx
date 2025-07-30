@@ -12,7 +12,7 @@ export const HubPage = () => {
 
   return (
     <Page back={true}>
-        Hub Page 
+      Hub Page 
     </Page>
   );
 };

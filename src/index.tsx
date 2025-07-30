@@ -8,7 +8,7 @@ import { init } from './Init.ts'
 // Mock the environment in case, we are outside Telegram.
 import './mockEnv.ts';
 
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root')!);
 
 try {
   const launchParams = retrieveLaunchParams();
