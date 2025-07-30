@@ -2,14 +2,14 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { nodePolyfills } from 'vite-plugin-node-polyfills'
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+// import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     nodePolyfills(),
-    ViteImageOptimizer(),
+    // ViteImageOptimizer(),
   ],
   base: '/fae-arcade-mini-app/',
   build: {
