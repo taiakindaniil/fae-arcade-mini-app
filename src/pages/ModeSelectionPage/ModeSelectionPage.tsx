@@ -29,7 +29,8 @@ export const ModeSelectionPage = () => {
             <IconButton 
               src="/assets/buttons/game-modes/fairy-glide.svg"
               onClick={() => navigate('/compete')}
-              height="65px"
+              width="237px"
+              height="61px"
             />
           </BackInnerContainer>
 
