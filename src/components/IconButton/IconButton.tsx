@@ -29,6 +29,7 @@ export const IconButton: FC<IconButtonProps> = ({
     opacity: disabled ? 0.5 : 1,
     width,
     height,
+    position: 'relative',
     ...style
   };
 
