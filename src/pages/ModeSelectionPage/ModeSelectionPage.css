@@ -1,0 +1,35 @@
+.game-mode-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 6px;
+    border-radius: 20px;
+    width: max-content;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+
+    padding: 0 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.info-container span {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    color: #C3652A;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}

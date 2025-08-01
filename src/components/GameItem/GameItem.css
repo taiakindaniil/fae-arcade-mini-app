@@ -1,0 +1,31 @@
+.game-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 17px;
+    box-sizing: border-box;
+
+    background: linear-gradient(#53ACE9, #90D6F4);
+
+    box-shadow:
+    rgba(255,255,255,0.7) 0px 3px 1px 0px inset,
+    rgba(0,0,0,0.1) 0px -6px 3px 0px inset;
+}
+
+.game-item-title {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    line-height: 32px;
+}
+
+.game-item-subtitle {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 10px;
+    color: #015A87;
+}

@@ -1,6 +1,7 @@
 import type { FC } from 'react';
+import './GameIcon.css';
 
-export interface IconButtonProps {
+export interface GameIconProps {
   src: string;
   alt: string; 
   onClick?: () => {};
@@ -12,9 +13,9 @@ export interface IconButtonProps {
   hoverEffect: boolean
 };
 
-export const IconButton: FC<IconButtonProps> = ({ 
+export const GameIcon: FC<GameIconProps> = ({ 
   src, 
-  alt = "Button", 
+  alt = "Game Icon", 
   onClick, 
   className = "", 
   style = {},
@@ -24,7 +25,6 @@ export const IconButton: FC<IconButtonProps> = ({
   hoverEffect = true
 }) => {
   const baseStyles = {
-    cursor: disabled ? 'not-allowed' : 'pointer',
     transition: hoverEffect ? 'transform 0.2s ease-in-out, opacity 0.2s ease-in-out' : 'none',
     opacity: disabled ? 0.5 : 1,
     width,
@@ -38,27 +38,13 @@ export const IconButton: FC<IconButtonProps> = ({
     }
   };
 
-  const handleMouseEnter = (e) => {
-    if (hoverEffect && !disabled) {
-      e.target.style.transform = 'scale(1.05)';
-    }
-  };
-
-  const handleMouseLeave = (e) => {
-    if (hoverEffect && !disabled) {
-      e.target.style.transform = 'scale(1)';
-    }
-  };
-
   return (
     <img 
       src={`/fae-arcade-mini-app${src}`}
       alt={alt}
-      className={className}
+      className={`game-icon ${className}`.trim()}
       style={baseStyles}
       onClick={handleClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       draggable='false'
     />
   );
